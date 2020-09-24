@@ -1,3 +1,11 @@
 #! /bin/bash -x
 
-empcheck=$((RANDOM%3))
+isPresent=1
+randomCheck=((RANDOM%2))
+
+if [ $randomcheck -eq $isPresent ]
+then
+	echo "Employee is present"
+else
+	echo "Employee is Abscent"
+fi
