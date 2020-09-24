@@ -1,9 +1,15 @@
 #! /bin/bash -x
 
-
 isFullTime=8
-empPerHr=20
+isRatePerHrs=20
 isPartTime=8
 
-#use RANDOM function to check for attendance 
-empcheck=$((RANDOM%3))
+isPresent=1
+randomCheck=$((RANDOM%2))
+
+if [ $randomCheck -eq $isPresent ]
+then
+	echo "Employee is present"
+else
+	echo "Employee is Abscent"
+fi
